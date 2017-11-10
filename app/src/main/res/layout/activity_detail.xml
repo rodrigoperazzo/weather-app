@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/min1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max1"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/max1"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:text="28"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/weatherIcon1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/max1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/weatherIcon2"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Thu"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/weatherIcon1"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon1"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon1" />
+
+    <TextView
+        android:id="@+id/day4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Sun"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/weatherIcon4"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon4"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon4" />
+
+    <TextView
+        android:id="@+id/day3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Sat"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/weatherIcon3"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon3"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon3" />
+
+    <TextView
+        android:id="@+id/max4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="28"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max1"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon4" />
+
+    <TextView
+        android:id="@+id/min4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="24"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max4"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon4" />
+
+    <TextView
+        android:id="@+id/min3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="24"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max3"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon3" />
+
+    <TextView
+        android:id="@+id/max3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="28"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max1"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon3" />
+
+    <TextView
+        android:id="@+id/min2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="24"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max2"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon2" />
+
+    <TextView
+        android:id="@+id/max2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="29"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/max1"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon2" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Fri"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/weatherIcon2"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherIcon2"
+        app:layout_constraintRight_toRightOf="@+id/weatherIcon2" />
+
+    <ImageView
+        android:id="@+id/weatherIcon4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/max4"
+        app:layout_constraintLeft_toRightOf="@+id/weatherIcon3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/weatherIcon2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/max2"
+        app:layout_constraintLeft_toRightOf="@+id/weatherIcon1"
+        app:layout_constraintRight_toLeftOf="@+id/weatherIcon3"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/weatherIcon3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/max3"
+        app:layout_constraintLeft_toRightOf="@+id/weatherIcon2"
+        app:layout_constraintRight_toLeftOf="@+id/weatherIcon4"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/weatherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Weather in Recife, BR"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/weatherSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Wed, 19:00, Scattered clouds "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/weatherTitle"
+        app:layout_constraintTop_toBottomOf="@+id/weatherTitle" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:theme="@style/Widget.AppCompat.SeekBar.Discrete" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="00:00"
+        app:layout_constraintLeft_toLeftOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="24:00"
+        app:layout_constraintRight_toRightOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <ImageView
+        android:id="@+id/currentWeatherIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherSubtitle"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="25"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currentWeatherIcon"
+        app:layout_constraintLeft_toRightOf="@+id/currentWeatherIcon"
+        app:layout_constraintTop_toTopOf="@+id/currentWeatherIcon"
+        android:layout_marginStart="16dp"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ºC"
+        app:layout_constraintTop_toTopOf="@+id/currentTemp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/currentTemp" />
+
+    <TextView
+        android:id="@+id/currentWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Wind 5.1 m/s"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/currentClouds"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherSubtitle"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/currentClouds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clouds 75%"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/currentPressure"
+        app:layout_constraintLeft_toLeftOf="@+id/currentWind"
+        app:layout_constraintTop_toBottomOf="@+id/currentWind" />
+
+    <TextView
+        android:id="@+id/currentPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure 1013 hpa"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintLeft_toLeftOf="@+id/currentClouds"
+        app:layout_constraintTop_toBottomOf="@+id/currentClouds" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
