@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        searchByFavorites();
+        //searchByFavorites();
     }
 
     @Override
@@ -140,12 +140,12 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager cm = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        return netInfo != null && netInfo.isConnectedOrConnecting();
+        return netInfo != null && netInfo.isConnected();
     }
 
     private void searchByFavorites() {
         if (!isDeviceConnected()) {
-            Toast.makeText(this, "No connection!", Toast.LENGTH_LONG);
+            Toast.makeText(this, "No connection!", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void searchByName() {
         if (!isDeviceConnected()) {
-            Toast.makeText(this, "No connection!", Toast.LENGTH_LONG);
+            Toast.makeText(this, "No connection!", Toast.LENGTH_LONG).show();
             return;
         }
 

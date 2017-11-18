@@ -58,7 +58,7 @@ public class FindItemAdapter extends ArrayAdapter<City> {
         ImageView icon = convertView.findViewById(R.id.weatherIcon);
         icon.setImageResource(resId);
 
-        final ImageView addIcon = convertView.findViewById(R.id.addIcon);
+        /*final ImageView addIcon = convertView.findViewById(R.id.addIcon);
         updateCityStateIcon(city, addIcon);
         addIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,12 +66,12 @@ public class FindItemAdapter extends ArrayAdapter<City> {
                 updateCityState(city);
                 updateCityStateIcon(city, addIcon);
             }
-        });
+        });*/
 
         return convertView;
     }
 
-    private void updateCityState(City city) {
+    /*private void updateCityState(City city) {
         if(RealmManager.isCitySaved(city)){
             RealmManager.deleteCity(city);
         } else {
@@ -85,5 +85,5 @@ public class FindItemAdapter extends ArrayAdapter<City> {
         } else {
             icon.setImageResource(android.R.drawable.btn_star);
         }
-    }
+    }*/
 }

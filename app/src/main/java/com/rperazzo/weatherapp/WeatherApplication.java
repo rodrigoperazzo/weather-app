@@ -8,6 +8,6 @@ public class WeatherApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Realm.init(this);
+        //Realm.init(this);
     }
 }
