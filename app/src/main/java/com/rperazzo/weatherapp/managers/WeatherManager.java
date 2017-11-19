@@ -3,6 +3,7 @@ package com.rperazzo.weatherapp.managers;
 import com.rperazzo.weatherapp.model.FindResult;
 import com.rperazzo.weatherapp.model.ForecastResult;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -36,10 +37,16 @@ public class WeatherManager {
         );
     }
 
+    private static OkHttpClient mClient = new OkHttpClient();
+    public static OkHttpClient getClient() {
+        return mClient;
+    }
+
     public static WeatherService getService() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(API_URL)
                 .addConverterFactory(GsonConverterFactory.create())
+                .client(mClient)
                 .build();
 
         return retrofit.create(WeatherService.class);
