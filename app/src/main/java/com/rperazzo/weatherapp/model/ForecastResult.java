@@ -32,6 +32,13 @@ public class ForecastResult {
             }
         }
 
+        // Current algorithm doesn't consider that first forecast received
+        // could be from the next day, so return first item instead.
+        if (nearest == null && list != null) {
+            if (!CalendarUtils.isSameDay(nowCal.getTime(),list.get(0).getDate())) {
+                nearest = list.get(0);
+            }
+        }
         return nearest;
     }
 
